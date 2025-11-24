@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './ProductInfo.css';
 
-const ProductInfo = ({ onOpenBrochure }) => {
+const ProductInfo = () => {
   const features = [
   { icon: '🌐', title: '多源感知监测', description: '融合温湿度、有害气体、粉尘浓度、震动等多维感知数据，实现实时监测' },
   { icon: '⚙️', title: '智能预警分析', description: '基于数据分析算法，自动识别渗漏积水、坍塌风险及人员入侵等异常情况' },
@@ -31,12 +31,7 @@ const specifications = [
     setShowImage(false);
   };
 
-  // 点击按钮在应用内切换到“宣传册”页
-  const handleOpenBrochure = () => {
-    if (typeof onOpenBrochure === 'function') {
-      onOpenBrochure();
-    }
-  };
+
 
   return (
     <div className="product-info">
@@ -85,14 +80,6 @@ const specifications = [
         </div>
       </div>
 
-      <div className="cta-section">
-        <h3>立即体验</h3>
-        <p>查看完整的产品宣传册，了解更多技术细节和应用案例</p>
-        <button className="cta-button" onClick={handleOpenBrochure}>
-          <span>📄</span>
-          查看宣传册
-        </button>
-      </div>
     </div>
   );
 };
