@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/tunnel_web/static/css/main.575005d6.css",
+    "main.js": "/tunnel_web/static/js/main.d2f47eea.js",
+    "index.html": "/tunnel_web/index.html",
+    "main.575005d6.css.map": "/tunnel_web/static/css/main.575005d6.css.map",
+    "main.d2f47eea.js.map": "/tunnel_web/static/js/main.d2f47eea.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.575005d6.css",
+    "static/js/main.d2f47eea.js"
+  ]
+}
